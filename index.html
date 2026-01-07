@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> WorldSense </title>
+  <title> FutureOmni </title>
 
-  <link rel="icon" href="static/images/worldsense.png">
+  <link rel="icon" href="static/images/logo0.png">
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
@@ -68,8 +68,8 @@
             More Research
           </a>
           <div class="navbar-dropdown">
-            <a class="navbar-item" href="https://jaaackhongggg.github.io/WorldSense/">
-              <b>WorldSense</b>
+            <a class="navbar-item" href="https://qq31415926.github.io/FutureOmni/">
+              <b>FutureOmni</b>
             </a>
           </div>
         </div>
@@ -85,11 +85,11 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title is-bold">
-              <img src="static/images/worldsense.png" style="width:1.6em;vertical-align: middle" alt="Logo" />
+              <img src="static/images/logo0.png" style="width:1.6em;vertical-align: middle" alt="Logo" />
               <span class="worldsense" style="vertical-align: middle">WorldSense</span>
             </h1>
             <h2 class="subtitle is-3 publication-subtitle" , style="margin-bottom: 20px;">
-              Evaluating Real-world Omnimodal Understanding <br> for Multimodal LLMs
+              Evaluating Future Forecasting from Omni-Modal Context for Multimodal LLMs
             </h2>
 
             <div class="is-size-5 publication-authors">
@@ -201,24 +201,14 @@
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <h2 class="title is-3">Introduction</h2>
-          <img src="static/images/sample.png" alt="data-sample" style="max-width: 100%;" />
+          <img src="static/images/intro.png" alt="data-sample" style="max-width: 100%;" />
           <div class="content has-text-justified">
-            We introduce <b>WorldSense</b>, the <i>first</i> benchmark to assess the multi-modal video understanding,
-            that
-            simultaneously encompasses <i>visual, audio, and text</i> inputs.
-            In contrast to existing benchmarks, our <b>WorldSense</b> has several features: (i) <b>collaboration of
-              omni-modality</b>,
-            we design the evaluation tasks to feature a strong coupling of audio and video, requiring models
-            to effectively utilize the synergistic perception of omni-modality;
-            (ii) <b>diversity of videos and tasks</b>, WorldSense encompasses a diverse collection of 1,662
-            audio-visual synchronised videos, systematically categorized into 8 primary domains and 67 fine-grained
-            subcategories to cover the broad scenarios, and 3,172 multi-choice QA pairs across 26 distinct tasks to
-            enable the comprehensive evaluation; (iii) <b>high-quality annotations</b>, all the QA pairs are manually
-            labeled by 80 expert annotators with multiple rounds of correction to ensure quality.
-            Based on our <b>WorldSense</b>, we extensively evaluate various state-of-the-art models.
-            The experimental results indicate that existing models face significant challenges in understanding
-            real-world scenarios (48.0% best accuracy). We hope our <b>WorldSense</b> can provide a platform for
-            evaluating the ability in constructing and understanding coherent contexts from omni-modality.
+            Although Multimodal Large Language Models (MLLMs) demonstrate strong omni-modal perception, their ability to forecast future events from audio–visual cues remains largely unexplored, as existing benchmarks focus mainly on retrospective understanding.
+To bridge this gap, we introduce <b>FutureOmni</b>, <u><i>the first benchmark designed to evaluate omni-modal future forecasting from audio–visual environments.</i></u> The evaluated models are required to perform cross-modal causal and temporal reasoning, as well as effectively leverage internal knowledge to predict future events.
+<b>FutureOmni</b> is constructed via a scalable LLM-assisted, human-in-the-loop pipeline and contains <b>919</b> videos and <b>1,034</b> multiple-choice QA pairs across <b>8</b> primary domains.
+Evaluations on <b>13</b> omni-modal and <b>7</b> video-only models show that <i>current systems struggle with audio-visual future prediction, particularly in speech-heavy scenarios</i>, with the best accuracy of 64.8% achieved by Gemini 3 Flash. 
+To mitigate this limitation, we curate a 7K-sample instruction-tuning dataset and propose an Omni-Modal Future Forecasting (OFF) training strategy. 
+Evaluations on <b>FutureOmni</b> and popular audio-visual and video-only benchmarks demonstrate that OFF enhances future forecasting and generalization.
           </div>
         </div>
       </div>
